@@ -1,0 +1,12 @@
+User input:
+
+Provide username: mark-val
+Do you want the user to be an administrative user? (yes/no) yes
+Provide user password: password123
+
+Command "show run | include user" output:
+
+username cisco privilege 15 password 0 cisco123!
+username mark-val privilege 15 password 0 password123
+
+Process finished with exit code 0

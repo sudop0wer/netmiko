@@ -49,6 +49,8 @@ net_connect = ConnectHandler(
 )
 
 process_id = input("Please provide a process ID: ")
+area_id = input("Please provide an area ID: ")
+
 interfaces = {}
 while True:
     interface = input("please provide an interface for which OSPF should be open (type 'exit' to end sequence): ")
@@ -62,6 +64,6 @@ print(interfaces)
 
 net_connect.send_config_set(f"ip ospf {process_id}")
 for key in interfaces.keys():
-    net_connect.send_config_set(f"network {key} {subnet_to_wildcard[int(interfaces[key])]}")
+    net_connect.send_config_set(f"network {key} {subnet_to_wildcard[int(interfaces[key])]} area {area_id}")
 
-net_connect.send_command("show ip protocols")
+print(net_connect.send_command("show ip ospf"))

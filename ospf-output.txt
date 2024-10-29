@@ -1,0 +1,47 @@
+User input:
+
+Please provide a process ID: 10
+please provide an interface for which OSPF should be open (type 'exit' to end sequence): 10.10.10.1
+Please provide a subnet mask for the interface (ex. 24 = /24): 24
+please provide an interface for which OSPF should be open (type 'exit' to end sequence): 192.168.20.21
+Please provide a subnet mask for the interface (ex. 24 = /24): 27
+please provide an interface for which OSPF should be open (type 'exit' to end sequence): exit
+
+Dictionary containing user commands:
+
+{'10.10.10.1': '24', '192.168.20.21': '27'}
+
+Output from "show ip ospf":
+
+ Routing Process "ospf 10" with ID 192.168.1.135
+ Start time: 00:44:47.684, Time elapsed: 00:03:56.635
+ Supports only single TOS(TOS0) routes
+ Supports opaque LSA
+ Supports Link-local Signaling (LLS)
+ Supports area transit capability
+ Supports NSSA (compatible with RFC 3101)
+ Supports Database Exchange Summary List Optimization (RFC 5243)
+ Event-log enabled, Maximum number of events: 1000, Mode: cyclic
+ Router is not originating router-LSAs with maximum metric
+ Initial SPF schedule delay 50 msecs
+ Minimum hold time between two consecutive SPFs 200 msecs
+ Maximum wait time between two consecutive SPFs 5000 msecs
+ Incremental-SPF disabled
+ Initial LSA throttle delay 50 msecs
+ Minimum hold time for LSA throttle 200 msecs
+ Maximum wait time for LSA throttle 5000 msecs
+ Minimum LSA arrival 100 msecs
+ LSA group pacing timer 240 secs
+ Interface flood pacing timer 33 msecs
+ Retransmission pacing timer 66 msecs
+ EXCHANGE/LOADING adjacency limit: initial 300, process maximum 300
+ Number of external LSA 0. Checksum Sum 0x000000
+ Number of opaque AS LSA 0. Checksum Sum 0x000000
+ Number of DCbitless external and opaque AS LSA 0
+ Number of DoNotAge external and opaque AS LSA 0
+ Number of areas in this router is 0. 0 normal 0 stub 0 nssa
+ Number of areas transit capable is 0
+ External flood list length 0
+ IETF NSF helper support enabled
+ Cisco NSF helper support enabled
+ Reference bandwidth unit is 100 mbps
