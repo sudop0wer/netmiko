@@ -53,7 +53,7 @@ area_id = input("Please provide an area ID: ")
 
 interfaces = {}
 while True:
-    interface = input("please provide an interface for which OSPF should be open (type 'exit' to end sequence): ")
+    interface = input("Please provide an interface IP address for which OSPF should be open (type 'exit' to end sequence): ")
     if interface == 'exit':
         break
     else:

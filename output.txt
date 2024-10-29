@@ -3,6 +3,7 @@ netmiko-lo-add output:
 Interface              IP-Address      OK? Method Status                Protocol
 GigabitEthernet1       192.168.1.134   YES DHCP   up                    up
 Loopback10             10.10.10.1      YES manual up                    up
+
 Loopback10 is up, line protocol is up
   Hardware is Loopback
   Description: created_with_netmiko
